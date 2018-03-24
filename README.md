@@ -1,5 +1,5 @@
 # BI-CAO Course v2014
-## Ćíslicové a analogové obvody
+## Číslicové a analogové obvody
 ### CTU / ČVUT FIT
 
 ### Lectures
