@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3695,        127]
+NotebookOptionsPosition[      3340,        110]
+NotebookOutlinePosition[      3686,        125]
+CellTagsIndexPosition[      3643,        122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Uz", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Iz", "=", "1000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"R3", "=", "200"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"R2", "=", "200"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"R1", "=", "100"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rovnice1", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"IR2", "+", "IR1"}], "\[Equal]", "Iz"}], ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rovnice2", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"IR3", "+", "Iz"}], "\[Equal]", "0"}], ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"odpor1", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"R1", "*", "IR1"}], "\[Equal]", 
+     RowBox[{
+      RowBox[{"-", "Uz"}], "-", "u1"}]}], ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"odpor2", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"R2", "*", "IR2"}], "\[Equal]", 
+     RowBox[{"-", "u1"}]}], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"odpor3", "=", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"R3", "*", "IR3"}], "\[Equal]", 
+      RowBox[{"-", "u2"}]}], ")"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rovnice", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "rovnice1", ",", "rovnice2", ",", "odpor1", ",", "odpor2", ",", 
+     "odpor3"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"promenne", "=", 
+    RowBox[{"{", 
+     RowBox[{"IR1", ",", "IR2", ",", "IR3", ",", "u1", ",", "u2"}], "}"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{"rovnice", ",", "promenne"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.592736818799489*^9, 3.592736874379357*^9}, {
+   3.5927372353318005`*^9, 3.5927373988383765`*^9}, {3.5927381520358906`*^9, 
+   3.592738160597262*^9}, 3.5927381964487543`*^9, {3.5927383238636866`*^9, 
+   3.5927383239037123`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"IR1", "\[Rule]", 
+     FractionBox["19999", "30"]}], ",", 
+    RowBox[{"IR2", "\[Rule]", 
+     FractionBox["10001", "30"]}], ",", 
+    RowBox[{"IR3", "\[Rule]", 
+     RowBox[{"-", "1000"}]}], ",", 
+    RowBox[{"u1", "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox["200020", "3"]}]}], ",", 
+    RowBox[{"u2", "\[Rule]", "200000"}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.59273740004113*^9, {3.592738153141588*^9, 3.592738161357743*^9}, 
+   3.592738197129181*^9, 3.5927383254637547`*^9}]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.5927377851747403`*^9}]
+},
+WindowSize->{707, 867},
+WindowMargins->{{282, Automatic}, {22, Automatic}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2082, 64, 332, "Input"],
+Cell[2664, 88, 568, 16, 102, "Output"]
+}, Open  ]],
+Cell[3247, 107, 89, 1, 52, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
